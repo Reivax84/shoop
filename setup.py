@@ -144,4 +144,7 @@ if __name__ == '__main__':
         packages=utils.find_packages(exclude=EXCLUDED_PACKAGES),
         include_package_data=True,
         cmdclass=utils.COMMANDS,
+        package_data={
+            '': ['*.js', '*.css'],
+        },
     )
